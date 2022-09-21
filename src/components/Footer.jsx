@@ -6,7 +6,7 @@ import styled from 'styled-components'
 // import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 // import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
 // import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import payment_footer from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/payment_footer.png';
+import payment_footer from '../../src/img/payment_footer.png';
 import { mobile } from '../responsiveDesign/responsive';
 
 const Container=styled.div`
