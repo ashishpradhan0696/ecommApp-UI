@@ -1,9 +1,16 @@
-import image1 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_1removed.png';
-import image2 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_2removed.png';
-import image3 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image3_removed.png';
-import image4 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_4.jpg';
-import image5 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_5.jpg';
-import image6 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_6.jpg';
+// import image1 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_1removed.png';
+import image1 from '../src/img/image_1removed.png';
+import image2 from '../src/img/image_2removed.png';
+import image3 from '../src/img/image3_removed.png';
+import image4 from '../src/img/image_4.jpg';
+import image5 from '../src/img/image_5.jpg';
+import image6 from '../src/img/image_6.jpg';
+
+// import image2 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_2removed.png';
+// import image3 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image3_removed.png';
+// import image4 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_4.jpg';
+// import image5 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_5.jpg';
+// import image6 from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/image_6.jpg';
 
 
 //list for slides
