@@ -1,10 +1,10 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCheckoutOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { useState } from 'react';
+// import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCheckoutOutlined';
+// import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+// import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+// import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Info=styled.div`
@@ -79,13 +79,16 @@ const ProductItems = ({item}) => {
         <Image src={item.image}/>
         <Info>
             <Icon>
-                <ShoppingCartCheckoutOutlinedIcon/>    
+                {/* <ShoppingCartCheckoutOutlinedIcon/>     */}
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
             </Icon>
             <Icon>
-                <FavoriteBorderOutlinedIcon />
+                {/* <FavoriteBorderOutlinedIcon /> */}
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
             </Icon>
             <Icon>
-                <SearchOutlinedIcon onClick={()=>navigate(`/product/${item.id}`)}/>
+                {/* <SearchOutlinedIcon onClick={()=>navigate(`/product/${item.id}`)}/> */}
+                <i class="fa fa-search" aria-hidden="true" onClick={()=>navigate(`/product/${item.id}`)}></i>
             </Icon>
         </Info>
     </Container>

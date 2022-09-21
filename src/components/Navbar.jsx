@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import SearchIcon from '@mui/icons-material/Search';
-import { Badge } from '@mui/material';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import SearchIcon from '@mui/icons-material/Search';
+// import { Badge } from '@mui/material';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { mobile } from '../responsiveDesign/responsive';
 import { useNavigate } from 'react-router-dom';
 
@@ -93,8 +93,11 @@ const Navbar = () => {
             <Language>EN</Language>
             <SearchContainer>
                 <Input placeholder='Search'/>
-                <SearchIcon style={{color:"grey", fontSize:"16px"}}/>
+                {/* <SearchIcon style={{color:"grey", fontSize:"16px"}}/> */}
+                <i class="fa fa-search" aria-hidden="true" style={{color:"grey", fontSize:"16px"}}></i>
+               
             </SearchContainer>
+            
         </Left>
         <Center onClick={()=>navigate("/")}>
             <Logo>
@@ -105,9 +108,10 @@ const Navbar = () => {
             <MenuItem onClick={()=>navigate("/register")}>Register</MenuItem>
             <MenuItem onClick={()=>navigate("/login")}>Sign In</MenuItem>
             <MenuItem>
-                <Badge badgeContent={4} color="secondary">
-                    <ShoppingCartOutlinedIcon onClick={()=>navigate("/cart")}/>
-                </Badge>
+                {/* <Badge badgeContent={4} color="secondary"> */}
+                    {/* <ShoppingCartOutlinedIcon onClick={()=>navigate("/cart")}/> */}
+                    <i class="fa fa-shopping-cart" aria-hidden="true" onClick={()=>navigate("/cart")} style={{fontSize:"20px"}} ></i>
+                {/* </Badge> */}
             </MenuItem>
         </Right>
      </Wrapper>

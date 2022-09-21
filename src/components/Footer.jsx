@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+// import FacebookIcon from '@mui/icons-material/Facebook';
+// import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+// import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
+// import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import payment_footer from 'D:/FrontEnd Dev-Projects/React Projects/ECOMAPP/ecomapp/src/img/payment_footer.png';
 import { mobile } from '../responsiveDesign/responsive';
 
@@ -105,13 +105,16 @@ const Footer = () => {
             </Description>
             <SocialContainer>
                 <SocialIcon color='grey'>
-                    <GitHubIcon/>   
+                    {/* <GitHubIcon/>    */}
+                    <i class="fa fa-github" aria-hidden="true"></i>
                 </SocialIcon>
                 <SocialIcon color=' #E1306C'>
-                    <InstagramIcon/>
+                    {/* <InstagramIcon/> */}
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
                 </SocialIcon>
                 <SocialIcon color='#4267B2'>
-                    <FacebookIcon />
+                    {/* <FacebookIcon /> */}
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </SocialIcon>
             </SocialContainer>
         </Left>
@@ -133,13 +136,19 @@ const Footer = () => {
         <Right>
             <Title>Contact</Title>
             <ContactItem>
-                <LocationOnOutlinedIcon style={{marginRight:"5px"}}/> Semiliguda, Gopabandhu Nagar
+                {/* <LocationOnOutlinedIcon style={{marginRight:"5px"}}/>  */}
+                <i class="fa fa-map-pin" aria-hidden="true" style={{marginRight:"5px"}}></i>
+                Semiliguda, Gopabandhu Nagar
             </ContactItem>
             <ContactItem>
-                <ContactPhoneOutlinedIcon style={{marginRight:"5px"}} /> 9999999999
+                {/* <ContactPhoneOutlinedIcon style={{marginRight:"5px"}} />  */}
+                <i class="fa fa-phone" aria-hidden="true" style={{marginRight:"5px"}}></i>
+                9999999999
             </ContactItem>
             <ContactItem>
-                <EmailOutlinedIcon style={{marginRight:"5px"}}/> ashish.pradhan0696@gmail.com
+                {/* <EmailOutlinedIcon style={{marginRight:"5px"}}/>  */}
+                <i class="fa fa-envelope" aria-hidden="true" style={{marginRight:"5px"}}> </i>
+                ashish.pradhan0696@gmail.com
             </ContactItem>
             <Payment src={payment_footer}/>
         </Right>

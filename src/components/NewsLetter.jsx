@@ -1,5 +1,5 @@
 import React from 'react'
-import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
+// import ForwardToInboxOutlinedIcon from '@mui/icons-material/ForwardToInboxOutlined';
 import styled from 'styled-components';
 import { mobile } from '../responsiveDesign/responsive';
 
@@ -80,7 +80,8 @@ const NewsLetter = () => {
         <InputContainer>
             <Input placeholder='Your email'/>
             <Button>
-                <ForwardToInboxOutlinedIcon />
+                {/* <ForwardToInboxOutlinedIcon /> */}
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </Button>
         </InputContainer>
     </Container>

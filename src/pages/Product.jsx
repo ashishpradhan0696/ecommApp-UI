@@ -4,10 +4,10 @@ import Announcements from '../components/Announcements'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import NewsLetter from '../components/NewsLetter'
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
+// import RemoveIcon from '@mui/icons-material/Remove';
+// import AddIcon from '@mui/icons-material/Add';
 import { useState } from 'react'
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
+// import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import { mobile } from '../responsiveDesign/responsive'
 import { useLocation } from 'react-router-dom'
 import { productItems } from '../myData';
@@ -217,11 +217,13 @@ const Product = () => {
                 </FilterContainer>
                 <AddContainer>
                     <AmountContainer>
-                        <RemoveIcon onClick={()=>handleAmount(-1)} style={{border:"3px solid teal", cursor:"pointer"}}/>
+                        {/* <RemoveIcon onClick={()=>handleAmount(-1)} style={{border:"3px solid teal", cursor:"pointer"}}/> */}
+                        <i class="fa fa-minus" aria-hidden="true" onClick={()=>handleAmount(-1)} style={{border:"1px solid teal", padding:"5px",cursor:"pointer"}}></i>
                             <Amount>{amount}</Amount>
-                        <AddIcon onClick={()=>handleAmount(1)} style={{border:"3px solid teal", cursor:"pointer"}}/>
+                        {/* <AddIcon onClick={()=>handleAmount(1)} style={{border:"3px solid teal", cursor:"pointer"}}/> */}
+                        <i class="fa fa-plus" aria-hidden="true" onClick={()=>handleAmount(1)} style={{border:"1px solid teal",padding:"5px", cursor:"pointer"}}></i>
                     </AmountContainer>
-                    <Button>Add to Cart <ShoppingCartCheckoutIcon /></Button>
+                    <Button>Add to Cart</Button>
                 </AddContainer>
                 
             </InfoContainer>

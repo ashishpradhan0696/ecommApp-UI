@@ -1,6 +1,6 @@
 import React from 'react'
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import styled from 'styled-components';
 import { SliderItems } from '../myData';
 import { useState } from 'react';
@@ -121,7 +121,8 @@ const Slider = () => {
     return (
     <Container>
         <Arrow direction="left" onClick={()=>handleClick("left")}>
-            <ArrowBackIosIcon></ArrowBackIosIcon>
+            {/* <ArrowBackIosIcon></ArrowBackIosIcon> */}
+            <i class="fa fa-angle-left fa-lg" aria-hidden="true" ></i>
         </Arrow>
         <Wrapper slideIndex={slideIndex}>
             {SliderItems.map((item)=>(
@@ -140,7 +141,8 @@ const Slider = () => {
             
         </Wrapper>
          <Arrow direction="right" onClick={()=>handleClick("right")}>
-            <ArrowForwardIosIcon></ArrowForwardIosIcon>
+            {/* <ArrowForwardIosIcon></ArrowForwardIosIcon> */}
+            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
         </Arrow>
 
 

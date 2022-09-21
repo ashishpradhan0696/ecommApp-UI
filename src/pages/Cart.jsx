@@ -4,8 +4,8 @@ import Announcements from '../components/Announcements'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import NewsLetter from '../components/NewsLetter'
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
+// import RemoveIcon from '@mui/icons-material/Remove';
+// import AddIcon from '@mui/icons-material/Add';
 import { mobile } from '../responsiveDesign/responsive'
 
 
@@ -193,9 +193,11 @@ const Cart = () => {
                         </ProductDetail>
                         <PriceDetail>
                             <ProductAmountContainer>
-                                <RemoveIcon/>
+                                {/* <RemoveIcon/> */}
+                                <i class="fa fa-minus" aria-hidden="true" ></i>
                                 <ProductAmount>2</ProductAmount>        
-                                <AddIcon/>                       
+                                {/* <AddIcon/>                        */}
+                                <i class="fa fa-plus" aria-hidden="true" ></i>
                             </ProductAmountContainer>  
                             <ProductPrice>Rs.1500</ProductPrice>  
                         </PriceDetail>
@@ -215,9 +217,11 @@ const Cart = () => {
                         </ProductDetail>
                         <PriceDetail>
                             <ProductAmountContainer>
-                                <RemoveIcon/>
+                                {/* <RemoveIcon/> */}
+                                 <i class="fa fa-minus" aria-hidden="true" ></i>
                                 <ProductAmount>1</ProductAmount>        
-                                <AddIcon/>                       
+                                {/* <AddIcon/>                        */}
+                                <i class="fa fa-plus" aria-hidden="true" ></i>
                             </ProductAmountContainer>  
                             <ProductPrice>Rs.750</ProductPrice>  
                         </PriceDetail>
@@ -236,9 +240,11 @@ const Cart = () => {
                         </ProductDetail>
                         <PriceDetail>
                             <ProductAmountContainer>
-                                <RemoveIcon/>
+                                {/* <RemoveIcon/> */}
+                                <i class="fa fa-minus" aria-hidden="true" ></i>
                                 <ProductAmount>1</ProductAmount>        
-                                <AddIcon/>                       
+                                {/* <AddIcon/>                        */}
+                                <i class="fa fa-plus" aria-hidden="true" ></i>
                             </ProductAmountContainer>  
                             <ProductPrice>Rs.750</ProductPrice>  
                         </PriceDetail>
