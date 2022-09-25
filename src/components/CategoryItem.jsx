@@ -15,7 +15,7 @@ const Container=styled.div`
 const Image=styled.img`
     width: 400px;
     height: 450px;
-
+    opacity: 0.9;
     //responsive
     ${mobile({height:"35    vh"})}
 `
@@ -32,8 +32,9 @@ const Info=styled.div`
 `
 
 const Title=styled.h1`
-   color : white;
+   color : #ffffff;
    margin: 10px;
+   font-weight: 900;
 `
 
 const Button=styled.button`

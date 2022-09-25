@@ -32,8 +32,8 @@ const ImgContainer=styled.div`
 
 `
 const Image=styled.img`
-    width: 80%;
-    height: 80vh;
+    width: 60%;
+    height: 60vh;
     /* object-fit:cover; */
 
    //responsive
