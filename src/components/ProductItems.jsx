@@ -86,9 +86,9 @@ const ProductItems = ({item}) => {
                 {/* <FavoriteBorderOutlinedIcon /> */}
                 <i class="fa fa-heart-o" aria-hidden="true"></i>
             </Icon>
-            <Icon>
+            <Icon onClick={()=>navigate(`/product/${item.id}`)}>
                 {/* <SearchOutlinedIcon onClick={()=>navigate(`/product/${item.id}`)}/> */}
-                <i class="fa fa-search" aria-hidden="true" onClick={()=>navigate(`/product/${item.id}`)}></i>
+                <i class="fa fa-search" aria-hidden="true" ></i>
             </Icon>
         </Info>
     </Container>
