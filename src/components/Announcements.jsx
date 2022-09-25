@@ -10,7 +10,7 @@ const Container=styled.div`
     align-items: center;
     justify-content: center;
     font-size: smaller;
-    font-weight: bolder;
+    font-weight: 400;
 `
 
 

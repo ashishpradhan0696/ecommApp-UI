@@ -69,6 +69,9 @@ const ProductDetail=styled.div`
 `
 const Image=styled.img`
     width: 30%;
+
+    //responsive
+    ${mobile({objectFit:"contain"})}
    
 `
 const Details=styled.div`
@@ -156,6 +159,7 @@ const SummaryButton=styled.button`
     color:white;
     font-size: 20px;
     font-weight: 600;
+    border-radius: 4px;
     
     &:hover{
         color: white;

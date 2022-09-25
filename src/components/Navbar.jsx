@@ -42,13 +42,19 @@ const SearchContainer=styled.div`
     margin-left: 25px;
     padding: 5px;
     background-color: white;
+
+   
 `
 
 const Input=styled.input`
    border: none;
-
+   
     //responsive
-    ${mobile({width:"50px"})} 
+    ${mobile({width:"80px", height:"20px"})} 
+
+    &:focus {
+        outline: none;
+    }
 `
 const Center=styled.div`
     flex:1;
@@ -56,7 +62,7 @@ const Center=styled.div`
     cursor:pointer;
 `
 const Logo=styled.h1`
-    font-weight :bold ;
+    font-weight :500 ;
 
     //responsive
     ${mobile({fontSize:"18px"})} 

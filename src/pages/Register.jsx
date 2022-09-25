@@ -10,6 +10,9 @@ const Container=styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+     //responsive
+   ${mobile({backgroundImage:"none"})}
 `
 const Wrapper=styled.div`
     width: 40%;
@@ -19,7 +22,7 @@ const Wrapper=styled.div`
     border-radius: 10px;
 
     //responsive
-   ${mobile({width:"70%"})}
+   ${mobile({width:"80%"})}
 `
 const Title=styled.h1`
     margin: 20px;
@@ -31,19 +34,26 @@ const Form=styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+
+     //responsive
+   ${mobile({flexDirection:"column"})}
 `
 const Input=styled.input`
     flex: 1;
     min-width: 40%;
     margin:20px 10px 0 0 ;
     padding: 10px;
+
+     //responsive
+   ${mobile({padding: "5px", fontSize:"15px"})}
+
 `
 
 const Agreement=styled.span`
     margin:20px 0;
 
     //responsive
-   ${mobile({fontSize:"15px"})}
+   ${mobile({fontSize:"10px"})}
    
 `
 
@@ -51,11 +61,13 @@ const Button=styled.button`
     width: 40%;
     border: none;
     padding: 10px;
+    border-radius: 4px;
     background-color: teal;
     cursor: pointer;
     font-size: 15px;
     font-weight: 600;
     color: black;
+    border-radius: 4px;
    
     &:hover{
         color: white;

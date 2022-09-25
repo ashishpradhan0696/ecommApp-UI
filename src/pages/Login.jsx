@@ -12,6 +12,8 @@ const Container=styled.div`
     justify-content: center;
     background-size: cover;
 
+      //responsive
+   ${mobile({backgroundImage:"none"})}
     
 `
 const Wrapper=styled.div`
@@ -22,7 +24,7 @@ const Wrapper=styled.div`
     border-radius: 10px;
 
    //responsive
-   ${mobile({width:"70%"})}
+   ${mobile({width:"80%"})}
 `
 const Title=styled.h1`
     margin: 20px;
@@ -43,7 +45,7 @@ const Input=styled.input`
 `
 
 const Button=styled.button`
-    width: 20%;
+    width: 60px;
     margin:10px 10px ;
     border: none;
     padding: 10px;
@@ -52,6 +54,7 @@ const Button=styled.button`
     font-size: 15px;
     font-weight: 600;
     color: black;
+    border-radius: 4px;
     &:hover{
         color: white;
         background-color:#cccaca ;
@@ -67,7 +70,7 @@ const Link=styled.a`
   font-weight:600 ;
   text-decoration: underline;
   cursor: pointer;
-
+ color:black;
   //responsive
     ${mobile({fontSize: "10px"})}
 `

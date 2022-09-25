@@ -80,6 +80,7 @@ const Button=styled.button`
     background-color: transparent;
     font-size: 15px;
     cursor: pointer;
+    border-radius: 4px;
 `
 
 // const Arrowleft=styled.div`
